@@ -1,12 +1,87 @@
-<!DOCTYPE html>
+
+<!doctype html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="robots" content="" />
+	<title>방문자 관리시스템 : 세아제강</title>
+	<!-- 테스트 중인 CSS -->  
+	<link href="/css/common.css" rel="stylesheet" type="text/css" />
+	<link href="/css/layout.css" rel="stylesheet" type="text/css" />
+	<link href="/css/style2.css" rel="stylesheet" type="text/css" />
+	<link href="/css/reset.css" rel="stylesheet" type="text/css" />
+	<link href="/css/etc.css" rel="stylesheet" type="text/css" />
+    <!-- <script src="/js/home/login.js" defer></script> -->
+  <!--
+  <link rel="stylesheet" href="./common/css/reset.css" />
+	<link rel="stylesheet" href="./common/css/common.css" />
+	 사이트 별 정의된 스타일시트 삽입 : 시작 -->
+   <!--
+	<link rel="stylesheet" href="./common/css/hs_layout.css" />
+	<link rel="stylesheet" href="./common/css/hs_style.css" />
+	 사이트 별 정의된 스타일시트 삽입 : 종료 
+	<link rel="stylesheet" href="./common/css/jquery-ui.min.css" />
+	<link rel="stylesheet" href="./common/css/etc.css" />
+	<script src="./common/js/jquery-3.3.1.min.js"></script>
+	<script src="./common/js/jquery-ui.min.js"></script>
+	<script src="./common/js/hs_common.js"></script> -->
+  
 </head>
 <body>
-    여기는 루트입니다.
+	<div id="wrap">
+		<header id="header">
+			<h1><a href="/"><img width="10%" src="./images/VNTG_wh2.png" alt="세아" /><span>방문자 관리</span></a></h1>
+			<nav id="gn">
+				<ul>
+					<li><a href="/login"><span>방문신청</span></a></li>
+					<li><a href="visitor.html"><span>방문신청조회</span></a></li>
+					
+				</ul>
+			</nav>
+		</header>
+		<div id="content_area" class="main_bg">
+
+			<div class="main_cnt">
+				<!-- content : s -->
+				<div class="main_guide_area">
+					<div class="mg_left_box">
+						<h2 class="">방문신청 안내</h2>
+						<p>당사를 방문하기 위해서는 먼저 온라인신청서를 작성하셔야 합니다.</p>
+						<ul class="btn_box">
+							<li><a href="appvisit.html">방문신청 작성</a></li>
+							<li><a href="https://www.hyosung.co.kr/kr/about/global/global_network2.do" target="_blank" title="새창으로 열기">오시는 길(방문 문의)</a></li>
+						</ul>
+						<h2 class="mt40">방문신청 가능 공장</h2>
+						<p>포항,창원,순천,군산</p>
+					</div>
+					<div class="mg_right_box">
+						<h3>방문신청 절차</h3>
+						<ul class="step mb40">
+							<li><span>방문신청 정보 작성</span></li>
+							<li><span>방문승인</span></li>
+							<li><span>방문신청 현황 조회</span></li>
+						</ul>
+						
+						<h3>방문현장 절차</h3>
+						<ul class="step">
+							<li><span>안내실에 신분증 제시</span></li>
+							<li><span>출입증 수령</span></li>
+							<li><span>업무 종료 후 안내실에 출입증 반납</span></li>
+						</ul>
+					</div>
+				</div>
+				<!-- content : e -->
+			</div>
+		</div>
+		<footer id="footer">
+			<div class="foot_logo"><img width="30%" src="./images/VNTG_wh2.png" alt="세아제강" /></div>
+			<div class="foot_copyright">
+				<!-- <a href="#n" class="">개인정보처리방침</a>  
+				Copyright &copy; 2009 by HYOSUNG. All rights reserved-->
+			</div>
+		</footer>
+	</div>
 </body>
 </html>

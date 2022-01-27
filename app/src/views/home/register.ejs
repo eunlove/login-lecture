@@ -14,6 +14,7 @@
 	<link href="/css/style2.css" rel="stylesheet" type="text/css" />
 	<link href="/css/reset.css" rel="stylesheet" type="text/css" />
 	<link href="/css/etc.css" rel="stylesheet" type="text/css" />
+    <link href="/css/register.css" rel="stylesheet" type="text/css" />
     <script src="/js/home/login.js" defer></script>
 
     </head>
@@ -33,19 +34,18 @@
 		<div id="content_area" class="main_bg">
 
 			<div class="main_cnt">
-				<!-- content : s -->
-				<div class="login_guide_area">
-					<div class="mg_left_box">
-						<h2 class="">로그인정보</h2>
-						<div class="container">
-							<input id="id" type="text" placeholder="아이디"  class="account">
-							<input id="psword" type="password" placeholder="비밀번호"  class="account">
-							<button id="btn_login" class="account">login</button>
-                            <p class="message"><a href="/register">회원가입</a></p>
-						</div>
-					</div>
-				</div>
-				<!-- content : e -->
+				<div class="login-page">
+                    <div class="form">
+                      <form class="login-form">
+                        <input id="id" type="text" placeholder="아이디"/>
+                        <input id="name" type="text" placeholder="이름"/>
+                        <input id="psword" type="text" placeholder="비밀번호"/>
+                        <input id="confirm-psword" type="text" placeholder="비밀번호 확인"/>
+                        <button>회원가입</button>
+                        <p class="message"><a href="/login">로그인</a></p>
+                      </form>
+                    </div>
+                  </div>
 			</div>
 		</div>
 		<footer id="footer">
@@ -58,3 +58,4 @@
 	</div>
 </body>
 </html>
+<!-- Copyright (c) 2022 by Aigars Silkalns (https://codepen.io/colorlib/pen/rxddKy) -->
