@@ -2,6 +2,7 @@
 
 //모듈
 const express = require("express");
+const bodyParser = require("body-parser"); //routes/home/home.ctrl.js에서 바디로 받아주기 위해 변수선언 및 npm i body-parser -s 설치
 const app = express();
 
 //라우팅
@@ -14,6 +15,9 @@ const PORT = 3000;
 app.set("views" ,"./src/views");
 app.set("view engine" , "ejs");
 app.use(express.static(`${__dirname}/src/public`)); 
+app.use(bodyParser.json()); //위에서 선언한 bodyParser를 미들웨어로 등록한다
+//URL을 통해 전달되는 데이터에 한글,공백 등과 같은 문자가 포함될경우 제대로 인식되지 않는 문제 해결
+app.use(bodyParser.urlencoded({extends:true}));
 //console.log(`${__dirname}/src/public`);
 
 app.use("/" , home); // use : 미들웨어를 등록해주는 메소드 

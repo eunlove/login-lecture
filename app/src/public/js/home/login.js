@@ -11,6 +11,22 @@ function login() {
         id: id.value,
         psword: psword.value,
     };
-    console.log(id.value,psword.value);
     
+    fetch("/login",{
+        method: "POST", //http
+        headers:{       // 내가 요청한데이터가 JSON형태인걸 알려주기위해
+            "Content-Type":"application/json"
+        },
+        body: JSON.stringify(req), 
+    }).then((res)=> res.json())
+      .then((res)=> {
+          if(res.success){
+              location.href = "/";
+          }else{
+              alert(res.msg);
+          }
+      })
+        .catch((err) =>{
+            console.error("로그인중 에러발생");
+        });
 }
