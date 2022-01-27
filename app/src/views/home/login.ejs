@@ -4,12 +4,58 @@
     <meta charset="UTF-8">
     
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="/js/home/login.js"></script>
-    <title>Document</title>
-</head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="robots" content="" />
+	<title>방문자 관리시스템 : 세아제강</title>
+	<!-- 테스트 중인 CSS -->  
+	<link href="/css/common.css" rel="stylesheet" type="text/css" />
+	<link href="/css/layout.css" rel="stylesheet" type="text/css" />
+	<link href="/css/style2.css" rel="stylesheet" type="text/css" />
+	<link href="/css/reset.css" rel="stylesheet" type="text/css" />
+	<link href="/css/etc.css" rel="stylesheet" type="text/css" />
+    
+
+    </head>
 <body>
-    <input type="text" placeholer="아아디"><br>
-    <input type="text" placeholer="비밀번호"><br>
-    <button>로그인</button>
+    <div id="wrap">
+		<header id="header">
+			<h1><a href="visit.html"><img width="10%" src="./images/VNTG_wh2.png" alt="세아" /><span>방문자 관리</span></a></h1>
+			
+			<nav id="gn">
+				<ul>
+					<li><a href="login.html"><span>방문신청</span></a></li>
+					<li><a href="visitor.html"><span>방문신청조회</span></a></li>
+					
+				</ul>
+			</nav>
+		</header>
+		<div id="content_area" class="main_bg">
+
+			<div class="main_cnt">
+				<!-- content : s -->
+				<div class="login_guide_area">
+					<div class="mg_left_box">
+						<h2 class="">로그인정보</h2>
+						<div class="container">
+							<input type="text" placeholder="ID" id="id" class="account">
+							<input type="password" placeholder="Password" id="psword" class="account">
+							<button id="btn_login" class="account">login</button>
+						</div>
+					</div>
+				</div>
+				<!-- content : e -->
+			</div>
+		</div>
+		<footer id="footer">
+			<div class="foot_logo"><img width="30%" src="./images/VNTG_wh2.png" alt="세아제강" /></div>
+			<div class="foot_copyright">
+				<!-- <a href="#n" class="">개인정보처리방침</a>  
+				Copyright &copy; 2009 by HYOSUNG. All rights reserved-->
+			</div>
+		</footer>
+	</div>
+    <script src="/js/home/login.js" defer></script>
 </body>
+
 </html>
