@@ -8,6 +8,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<meta name="robots" content="" />
 	<title>방문자 관리시스템 : 세아제강</title>
+    
 	<!-- 테스트 중인 CSS -->  
 	<link href="/css/common.css" rel="stylesheet" type="text/css" />
 	<link href="/css/layout.css" rel="stylesheet" type="text/css" />
@@ -15,7 +16,7 @@
 	<link href="/css/reset.css" rel="stylesheet" type="text/css" />
 	<link href="/css/etc.css" rel="stylesheet" type="text/css" />
     <link href="/css/register.css" rel="stylesheet" type="text/css" />
-    <script src="/js/home/login.js" defer></script>
+    <script src="/js/home/register.js" defer></script>
 
     </head>
 <body>
@@ -39,9 +40,9 @@
                       <form class="login-form">
                         <input id="id" type="text" placeholder="아이디"/>
                         <input id="name" type="text" placeholder="이름"/>
-                        <input id="psword" type="text" placeholder="비밀번호"/>
-                        <input id="confirm-psword" type="text" placeholder="비밀번호 확인"/>
-                        <button>회원가입</button>
+                        <input id="psword" type="password" placeholder="비밀번호"/>
+                        <input id="confirm-psword" type="password" placeholder="비밀번호 확인"/>
+                        <p id ="btn_register">회원가입</p>
                         <p class="message"><a href="/login">로그인</a></p>
                       </form>
                     </div>
